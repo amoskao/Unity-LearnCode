@@ -30,10 +30,28 @@ public class Dog
     #region 欄位
     public string name;
     public float weight;
-    public string type;
-    public string sex;
+    
     public string color;
-    public int age;
+
+    private string sex;
+    private int age;
+    private string type;
+    #endregion
+
+    #region 建構函式
+
+    //建構函式可以多載
+    public Dog()
+    {
+
+    }
+
+    public Dog(string sex, int age, string type )
+    {
+        this.sex = sex;
+        this.age = age;
+        this.type = type;
+    }
     #endregion
 
     #region 方法
