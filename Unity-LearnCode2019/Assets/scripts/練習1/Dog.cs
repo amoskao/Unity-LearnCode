@@ -22,8 +22,10 @@
 //10. 在 Main 方法內執行第二個狗物件的吃東西方法，傳入食物與份量
 /*/用"/*//*/"這個方式大範圍註記文章/*/
 using UnityEngine;
+[System.Serializable]
+public class Dog 
 
-public class Dog
+
 {
     #region 欄位
     public string name;
@@ -56,7 +58,7 @@ public class Dog
     /// </summary>
     /// <param name="food">食物</param>
     /// <param name="speed">吃飯速度</param>
-    public void Eat(string food, string  speed = "慢")
+    public void Eat(string food, string speed = "慢")
     {
         Debug.Log(name + ":" + food + "，速度：" + speed);
     }
