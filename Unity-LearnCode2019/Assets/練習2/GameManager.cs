@@ -3,7 +3,9 @@
 public class GameManager : MonoBehaviour
 {
     public Soldier SoldierA = new Soldier();
+
     public Warrior WarriorA = new Warrior();
+
     private void Start()
     {
         SoldierA.lv = 30;
