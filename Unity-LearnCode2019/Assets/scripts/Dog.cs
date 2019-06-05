@@ -42,6 +42,7 @@ public class Dog
     {
         Debug.Log(name + ":汪汪!!!");
     }
+
     /// <summary>
     /// 狗與人類年齡轉換
     /// </summary>
@@ -49,6 +50,20 @@ public class Dog
     public int ConvertAge()
     {
         return age * 7;
+    }
+    /// <summary>
+    /// 狗吃東西的方法
+    /// </summary>
+    /// <param name="food">食物</param>
+    /// <param name="speed">吃飯速度</param>
+    public void Eat(string food, string  speed = "慢")
+    {
+        Debug.Log(name + ":" + food + "，速度：" + speed);
+    }
+
+    public void Eat(string food, int count)
+    {
+        Debug.Log(name + ":" + food + "，份量：" + count);
     }
     #endregion
 
